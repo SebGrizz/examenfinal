@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+				margin: 0;
+				padding: 0;
+			}
+
+			body{
+				background: #000046;  /* fallback for old browsers */
+				background: -webkit-linear-gradient(to bottom, #000046, #1CB5E0);  /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to bottom, #000046, #1CB5E0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			}
+
+		
+
+			header{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				transition: 0.7s;
+				padding: 20px 20px;
+				z-index: 10;
+                background-color: rgb(43, 110, 127) ;
+                text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+				-webkit-text-stroke: 1.5px black;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			}
+			
+
+			nav{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			header ul{
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			header ul li{
+				list-style: none;
+				color: #481212;
+			}
+
+			header ul li a{
+				position: realative;
+				font-family: helvetica;
+				margin: 0px 15px;
+				text-decoration: none;
+				color: #481212;
+				letter-spacing: 2px;
+				font-weight: 600;
+				transition: 0.7s;
+			}
+
+			.Fondo img{
+				background-size: 50% ;
+				width: 45%;
+				height: 80%;
+				position: realative;
+                float: right;
+				border-radius: 20px;
+				box-shadow: 5px 8px 12px black;
+			}
+            
+        
+
+            
+            
+            .contenedor{
+                width: 100%;
+            }
+
+
+            .formulario{
+                background: #fff;
+                margin-top: 110px;
+                padding: 3px;
+                float: left;
+            }
+             h1{
+                text-align: center;
+                color: #1a2537;
+                font-size: 40px;
+            }
+           
+             input[type="text"],
+             input[type="password"]{
+                font-size: 20px;
+                width: 82%;
+                padding: 10px;
+                border: none;
+            }
+            .input-contenedor{
+                margin-bottom: 15px;
+                border: 1px solid #aaa;
+            }
+            .icon{
+                min-width: 50px;
+                text-align: center;
+                color: #999;
+            }
+            .button{
+                border: none;
+                width: 100%;
+                color: white;
+                font-size: 20px;
+                background:  #1a2537;
+                padding: 15px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .button:hover{
+                background: cadetblue;
+            }
+            p{
+                text-align: left;
+                margin-top: 10px;
+            }
+            .link{
+                text-decoration: none;
+                color: #1a2537;
+                font-weight: 600;
+            } 
+            .link:hover{
+                color: cadetblue;
+            }
+            @media(min-width:768px)
+            {
+            .formulario{
+                margin: auto;
+                width: 500px;
+                height: 370px;
+                margin-top: 120px;
+                margin-left: 60px;
+                border-radius: 2%;
+                position:relative
+            }
+            
+            
+
+        
+            
+                
+                
+        }
+        
+			.logo{
+				position: relative;
+				color: #481212;
+				font-weight: bold;
+				font-size: 2em;
+				letter-spacing: 2px;
+				transition: 1.5s;
+				text-decoration: none
+			}
+            .contenido{
+                margin-top:520px;
+                position: absolute;
+            }
+           
+            .contenido h2{
+                font-size: 30px;
+                margin-top: 10px;
+                position: relative;
+                margin-left: 580px;
+                
+            }
+            .contenido p{
+                margin-top:30px ;
+                width: 1000px;
+                margin-left: 200px;
+            }    
+            .contenido hr{
+                margin-left: 565px;
+                padding: 2px;
+                background-color: salmon;
+            }
+            
+            
+            
+            
+            .segundo{
+                margin-top:620px;
+                position: absolute;
+            }
+			.segundo h2{
+                font-size: 30px;
+                margin-top: 25px;
+                position: relative;
+                margin-left: 560px;
+                
+            }
+            .segundo p{
+                margin-top:25px ;
+                width: 1000px;
+                margin-left: 200px;
+            }    
+            .segundo hr{
+                margin-left: 565px;
+                padding: 2px;
+                background-color: salmon;
+            } 
+			.tercero {
+				margin-top:790px;
+                position: absolute;
+			}
+            .tercero p {
+				margin-top:1px ;
+                width: 1000px;
+                margin-left: 200px;
+			}
+			.cuarto {
+				margin-top:1000px;
+                position: absolute;
+				
+			}
+            .cuarto1 h2{
+                font-size: 30px;
+                margin-top: 0px;
+                position: relative;
+                margin-left: 590px;
+                
+            }
+			.cuarto1 hr{
+                margin-left: 565px;
+                padding: 2px;
+                background-color: salmon;
+            }
+			.cuarto img {
+				width: 100px;
+				height: 100px;
+			}
+			.cuarto p {
+				float: left;
+				margin-left: 170px;
+			}
+			.cuarto2 {
+				display: flex;
+				justify-content: center; 
+			}
+			.cuarto2 img {
+				float: left;
+				margin-left: 165px;
+
+			}
+            .extra{
+                height: 90px;
+                width: 100%;
+                
+                background-color: darkorange;
+            }
+			.extra {
+				
+				margin-top: 1250px;
+				margin-left: 0px;
+            
+			}
+			.ubicacion {
+				float: left; 
+				margin-left: 30px;
+                
+			}
+			.telefono {
+				float: left;
+				margin-left: 110px;
+              
+			}
+			.redes {
+				float: left;
+				margin-left: 140px;
+               
+			}
+			.wasap {
+				float: left;
+				margin-left: 170px;
+                
+			}		
+            .redes img{
+                width: 50px;
+                height: 50px;
+                border-radius: 20px;
+                box-shadow: #1a2537;
+                margin-left: 10px;
+            }
+            .wasap img{
+                width: 50px;
+                height: 50px;
+                border-radius: 20px;
+                box-shadow: #1a2537;
+                margin-left: 41px;
+            }
+
+
+
+            
+    
+</style>
+
+<body>
+    <header>
+	    <a href="http://www.unfv.edu.pe/facultades/fiis/" class="logo"> Consultoria digital TIKI </a>
+		 <nav>
+		   <ul>
+			 <li><a href="https://web2.unfv.edu.pe/sitio/">Inicio</a></li>
+			 <li><a href="https://www.facebook.com/FIISUNFVOFICIAL">Nosotros</a></li>
+			 <li><a href="https://web2.unfv.edu.pe/Sitio/servicio-institucional/aula-virtual">Blog</a></li>
+			 <li><a href="http://www.unfv.edu.pe/facultades/fiis/departamento-academico/dpto-academico-profesional-de-ingenieria-de-sistemas/itemlist/category/65-plana-docente">Nuestros servicios</a></li>
+			 <li><a href="http://www.unfv.edu.pe/facultades/fiis/index.php/servicios/directorio-telefonico">Contacto</a></li>
+		   </ul>
+		 </nav>
+	</header>
+    
+        
+
+    <form class="formulario">
+    
+        <h1>Registrate</h1>
+            <div class="contenedor">
+             
+                <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="Nombre Completo">
+                 
+                </div>
+                 
+                <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" placeholder="Correo Electronico">
+                 
+                </div>
+                 
+                <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" placeholder="Contraseña">
+                 
+                </div>
+                <input type="submit" value="Registrate" class="button">
+                <p>Al registrate, aceptas nuestros terminos de Condicones de uso y Politica de privacidad</p>
+                <p><center>¿Ya tienes una cuenta?, Inicia sesion</center></p>
+                
+            </div>
+        
+        
+    </form>	
+
+	    <section class="Fondo">
+		  <img src="{% static "imagenes/fondo.jpg" %}">
+        </section>
+    <section class="contenido">
+        <div>
+           <h2>Sobre nosotros</h2> <hr width="210px">
+        </div>
+           <p>SOMOS ASESORES COMPROMETIDOS CON UN SOLO COMETIDO: AYUDAR A NUESTROS CLIENTES  A CUMPLIR SUS SUEÑOS Y OBJETIVOS. ESTO LO CONSEGUIMMOS MEDIANTE ASESORÍAS PROFESIONALES EN DOS GRANDES ÁREAS. PREVISIONAL Y DESARROLLO.</p>
+       
+    </section>  
+    
+    <section class="segundo">
+		<div>
+			<h2>Estrategia Digital</h2> <hr width="210px">
+		</div>
+			<p>PONEMOS A TU DISPOSICIÓN 10 AÑOS DE EXPERIENCIA LIDERANDO CASOS DE ÉXITO EN SEO, SEM, SOCIAL MEDIA Y ANALÍTICA WEB PARA DEFINIR UNA HOJA DE RUTA HACIA EL ÉXITO EN LAS OPERACIONES DIGITALES DE TU EMPRESA, DESARROLLANDO UNA PROPUESTA ÚNICA DE VENTA QUE MAXIMICE EL VALOR PARA TUS CLIENTES Y LA RENTABILIDAD EN TU CUENTA DE RESULTADOS.
+
+			</p>
+
+	</section>
+
+	<div class="tercero">
+		<p>CUSTOMER EXPERIENCE</p>
+		<p>ESTRATEGIA CEO</p>
+		<p>ESTRATEGIA PERFORMANCE / SEM MARKETING </p>
+		<p>ESTRATEGIA MARKETPLACES </p>
+		<p>ESTRATEGIA REDES SOCIALES</p>
+		<p>MEDICION Y ANALISIS</p>
+		<p>MARKETING AUTOMATIZADO</p>
+		<p>INBOUND Y CONTENIDOS</p>
+		<p>DESARROLLO WEB</p>
+
+	</div> 
+
+    
+
+      
+    <div class="cuarto">
+        <div class="cuarto1">
+           <h2>Especialistas</h2> <hr width="210px"> <br>
+        </div>
+    
+        <div class="cuarto2">
+          <img  src="{% static "imagenes/marcelo.jpg" %}">
+          <img src="{% static "imagenes/sebastian.png" %}">
+          <img src="{% static "imagenes/diegope.png" %}">
+          <img src="{% static "imagenes/angelo.png" %}">
+        </div> 
+    
+            <p>Ing. AREVALO</p>
+            <p>Ing. CHAVESTA</p>
+            <p>Ing. PEREZ</p>
+            <p>Ing. TICLLACURI</p>
+    
+    
+    
+    </div>
+    <hr>
+    <div class="extra">
+        <div class="ubicacion">
+           <h2>Nuestra Ubicacion:</h2>
+           <h3> Av. Óscar R. Benavides N°450 - Lima </h3>
+        </div>
+        <div class="telefono">
+           <h2>Telefono:</h2>
+           <h3> (01) 4237202 </h3>
+        </div>
+        <div class="redes">
+           <h2>Redes Sociales:</h2>
+           <img src="{% static "imagenes/twiter.png" %}">
+           <img src="{% static "imagenes/face.png" %}">
+        </div>
+        <div class="wasap">
+           <h2>Whatsapp:</h2>
+           <img src="{% static "imagenes/wasap.png" %}">
+        
+        </div>
+ 
+
+ 
+    </div>
+
+
+    
+    
+    
+
+
+		
+
+</body>
+</html>
